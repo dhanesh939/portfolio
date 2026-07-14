@@ -18,7 +18,7 @@ const howIWork = [
 
 export function ImageGallery() {
   return (
-    <section className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
+    <section id="how-i-work" className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
       <div className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-6 shadow-[0_20px_60px_rgba(2,6,23,0.25)] sm:p-8">
         <div className="space-y-4">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">How I Work</p>

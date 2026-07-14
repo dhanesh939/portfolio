@@ -57,6 +57,69 @@ export default function AboutPage() {
         </Card>
       </section>
 
+      <section className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+        <div className="rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(15,23,42,0.88),rgba(2,6,23,0.94))] p-8 shadow-[0_24px_70px_rgba(2,6,23,0.24)] sm:p-10">
+          <SectionHeader
+            eyebrow="Beyond the work"
+            title="The people and values that keep me grounded."
+          />
+          <div className="mt-4 space-y-4">
+            <p className="text-sm leading-8 text-slate-400">
+              Outside of work, my life is centered around family, learning, and building a better future. My family keeps me grounded and reminds me why clarity, trust, ownership, and long-term thinking matter.
+            </p>
+            <p className="text-sm leading-8 text-slate-400">
+              That same mindset carries into my professional work. Whether I am solving a complex analytics issue, building a measurement strategy, or helping teams align around customer data, I try to bring patience, responsibility, and a practical focus on outcomes.
+            </p>
+            <p className="text-sm leading-8 text-slate-300">
+              For me, good systems are not just about technology - they are about creating stability, trust, and better decisions for the people who depend on them.
+            </p>
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-3">
+            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-3">
+              <p className="text-sm font-semibold text-white">Family</p>
+              <p className="mt-1 text-xs text-slate-400">Grounded by the people who matter most.</p>
+            </div>
+            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-3">
+              <p className="text-sm font-semibold text-white">Growth</p>
+              <p className="mt-1 text-xs text-slate-400">Always learning, improving, and building toward the next level.</p>
+            </div>
+            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-3">
+              <p className="text-sm font-semibold text-white">Ownership</p>
+              <p className="mt-1 text-xs text-slate-400">Focused on responsibility, trust, and long-term value.</p>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <Button href="/#how-i-work" variant="secondary">Learn how I work</Button>
+          </div>
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-900/70 shadow-[0_20px_60px_rgba(2,6,23,0.2)] sm:col-span-2">
+            <img
+              src="/gallery-01.jpg"
+              alt="Dhanesh Patel and spouse at an event"
+              className="h-[320px] w-full object-contain object-center p-3 transition duration-300 hover:scale-[1.01]"
+            />
+          </div>
+          <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-900/70 shadow-[0_20px_60px_rgba(2,6,23,0.18)]">
+            <img
+              src="/gallery-02.jpg"
+              alt="Dhanesh Patel with family"
+              className="h-[300px] w-full object-cover object-center transition duration-300 hover:scale-[1.01]"
+            />
+          </div>
+          <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-900/70 shadow-[0_20px_60px_rgba(2,6,23,0.18)]">
+            <img
+              src="/gallery-04.jpg"
+              alt="Family moment outside of work"
+              className="h-[300px] w-full object-cover object-center transition duration-300 hover:scale-[1.01]"
+            />
+          </div>
+        </div>
+      </section>
+
       <CTASection title="Ready to discuss architecture, consulting, or a senior role?" description="I work with teams that need strategic clarity and practical implementation depth across Adobe, Google, customer data, and AI-readiness." href="/contact" buttonLabel="Contact Dhanesh" />
     </main>
   );
