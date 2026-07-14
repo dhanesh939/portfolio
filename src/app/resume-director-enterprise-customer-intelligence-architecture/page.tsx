@@ -35,7 +35,7 @@ const detailSections = [
     rows: [
       { label: "Experience", value: "10+ years across analytics, implementation, martech, and customer data systems" },
       { label: "Job Type", value: "Full-time, contract, consulting, advisory" },
-      { label: "Salary Range", value: "$200K+ base or $220K-$300K total compensation" },
+      { label: "Salary Range", value: "$185K+ total compensation" },
       { label: "Consulting Range", value: "Discuss based on scope" },
       { label: "Start Date", value: "Open to the right opportunity" },
       { label: "Location Preference", value: "Dallas, TX / Remote / Hybrid / selective relocation" },
@@ -185,6 +185,9 @@ export default function DirectorResumePage() {
                   <h1 className="text-3xl font-semibold tracking-tight text-slate-900">Dhanesh Patel - Enterprise Customer Intelligence Architect</h1>
                   <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-600">
                     Customer intelligence and martech architecture leader with a foundation in analytics implementation, digital measurement, tagging strategy, customer journey analysis, and enterprise-grade technical delivery across Adobe, Google, and data-driven platforms.
+                  </p>
+                  <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-600">
+                    Compensation target: $185K+ total compensation, depending on scope, title, flexibility, bonus/equity, and leadership expectations.
                   </p>
                 </div>
                 <div className="text-sm leading-7 text-slate-600">

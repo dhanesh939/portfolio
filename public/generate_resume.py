@@ -26,7 +26,7 @@ Location Preference: Dallas, TX, Remote, Hybrid, or selective relocation for the
 
 Work Type: Full-time leadership / architect roles, consulting, advisory, and contract architecture projects
 
-Target Compensation: $200K+ base or $220K- $300K total compensation depending on scope, title, bonus/equity, remote flexibility, and leadership expectations
+Target Compensation: $185K+ total compensation, depending on scope, title, flexibility, bonus/equity, and leadership expectations.
 
 Consulting Focus: Analytics audits, Adobe/Google measurement modernization, CJA/AEP readiness, data layer architecture, consent-aware measurement, personalization strategy, and customer data architecture reviews
 
