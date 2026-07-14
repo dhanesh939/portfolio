@@ -6,20 +6,20 @@ const initialState = {
   name: "",
   email: "",
   company: "",
-  role: "",
+  roleReason: "",
   budget: "",
   message: "",
-  honeypot: "",
+  website: "",
 };
+
+const genericErrorMessage = "Message could not be sent right now. Please email me directly at dhaneshpatel1234@gmail.com.";
 
 export function ContactForm() {
   const [form, setForm] = useState(initialState);
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [feedback, setFeedback] = useState("");
 
-  const handleChange = (
-    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
     setForm((current) => ({ ...current, [name]: value }));
   };
@@ -41,18 +41,18 @@ export function ContactForm() {
         body: JSON.stringify(payload),
       });
 
-      const data = await response.json();
+      const data = await response.json().catch(() => ({}));
 
       if (!response.ok) {
-        throw new Error(data?.error || "Unable to send your message right now.");
+        throw new Error(data?.error || genericErrorMessage);
       }
 
       setStatus("success");
       setFeedback("Thanks — your message was sent. I’ll reply by email.");
       setForm(initialState);
-    } catch (error) {
+    } catch {
       setStatus("error");
-      setFeedback(error instanceof Error ? error.message : "Unable to send your message right now.");
+      setFeedback(genericErrorMessage);
     }
   };
 
@@ -92,18 +92,16 @@ export function ContactForm() {
             value={form.company}
             onChange={handleChange}
             placeholder="Company name"
-            required
           />
         </label>
         <label className="text-sm text-slate-300">
           <span className="mb-2 block">Role / Reason for contact</span>
           <input
             className="w-full rounded-xl border border-white/10 bg-slate-900/70 px-4 py-3 text-white outline-none"
-            name="role"
-            value={form.role}
+            name="roleReason"
+            value={form.roleReason}
             onChange={handleChange}
             placeholder="Director role, consulting, advisory, architecture review"
-            required
           />
         </label>
       </div>
@@ -130,11 +128,12 @@ export function ContactForm() {
       </label>
       <input
         className="hidden"
-        name="companyWebsite"
-        value={form.honeypot}
+        name="website"
+        value={form.website}
         onChange={handleChange}
         tabIndex={-1}
         autoComplete="off"
+        aria-hidden="true"
       />
       {feedback ? (
         <p className={`text-sm ${status === "success" ? "text-cyan-300" : "text-rose-300"}`}>{feedback}</p>

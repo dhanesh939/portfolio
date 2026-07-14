@@ -2,61 +2,95 @@
 
 import { useState } from "react";
 
-const detailsText = `Dhanesh Patel
-Director, Enterprise Customer Intelligence Architecture
-Dallas, TX / Remote
-Website: dhaneshpatel.com
-Email: dhaneshpatel1234@gmail.com
-LinkedIn: linkedin.com/in/dhaneshpatel1234/
+type DetailRow = {
+  label: string;
+  value: string;
+};
 
-Work Authorization: Authorized to work in the U.S.
-Sponsorship: Not required
-Availability: Open to the right full-time, consulting, advisory, or contract opportunity
-Job Type: Full-time, contract, consulting, advisory
-Location Preference: Dallas, Remote, Hybrid, or selective relocation
+type DetailSection = {
+  title: string;
+  rows: DetailRow[];
+};
 
-Full-Time Target: $200K+ base or $220K–$300K total compensation depending on scope, title, bonus/equity, leadership expectations, and remote flexibility
-Consulting Target: Available for architecture reviews, audits, roadmap work, advisory, and implementation modernization
-Hourly/Project Rate: Discuss based on scope
+type Props = {
+  sections: DetailSection[];
+  targetTitles: string[];
+};
 
-Target Titles: Director, Enterprise Customer Intelligence Architecture; Adobe Experience Cloud Architect; Adobe Experience Platform Architect; AEP Architect; AEP / AJO Architect; Customer Data Platform Architect; Martech Solutions Architect; Digital Analytics Architect; Measurement Architect; Customer Journey Analytics Architect; RT-CDP Architect; Director of Marketing Technology; Director of Analytics Architecture; Data Product Lead, Adobe Experience Cloud; AI-Ready Customer Data Architect`;
+export function DirectorResumePageClient({ sections, targetTitles }: Props) {
+  const [copiedLabel, setCopiedLabel] = useState<string | null>(null);
 
-export function DirectorResumePageClient() {
-  const [copied, setCopied] = useState(false);
-
-  const copyAll = async () => {
+  const copyValue = async (value: string, label: string) => {
     try {
-      await navigator.clipboard.writeText(detailsText);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 1600);
+      await navigator.clipboard.writeText(value);
+      setCopiedLabel(label);
+      window.setTimeout(() => setCopiedLabel(null), 1600);
     } catch {
-      setCopied(false);
+      setCopiedLabel(null);
     }
   };
 
-  const printResume = () => {
-    window.print();
+  const copyAll = async () => {
+    const text = sections
+      .flatMap((section) => section.rows)
+      .map((row) => `${row.label}: ${row.value}`)
+      .join("\n");
+
+    try {
+      await navigator.clipboard.writeText(`${text}\n\nTitle Preference: ${targetTitles.join(", ")}`);
+      setCopiedLabel("all");
+      window.setTimeout(() => setCopiedLabel(null), 1600);
+    } catch {
+      setCopiedLabel(null);
+    }
   };
 
   return (
-    <div className="flex flex-wrap gap-3">
-      <button
-        type="button"
-        onClick={copyAll}
-        className="rounded-full border border-cyan-400/70 bg-cyan-500/10 px-5 py-3 text-sm font-semibold text-cyan-200 transition hover:bg-cyan-500/20"
-      >
-        {copied ? "Copied" : "Copy All Details"}
-      </button>
-      <button
-        type="button"
-        onClick={printResume}
-        className="rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-      >
-        Print / Save as PDF
-      </button>
-      <a href="/contact" className="rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
-        Contact Dhanesh
-      </a>
+    <div className="space-y-5">
+      {sections.map((section) => (
+        <div key={section.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">{section.title}</h3>
+          <div className="mt-3 space-y-2">
+            {section.rows.map((row) => (
+              <button
+                key={row.label}
+                type="button"
+                onClick={() => copyValue(row.value, row.label)}
+                className="flex w-full items-center justify-between rounded-xl border border-slate-200 bg-white px-3 py-3 text-left text-sm text-slate-700 transition hover:border-cyan-400 hover:bg-cyan-50"
+              >
+                <span className="pr-3 text-slate-500">{row.label}</span>
+                <span className="flex-1 text-right font-medium text-slate-900">{row.value}</span>
+                <span className="ml-3 text-cyan-600">⧉</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+        <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Title Preference</h3>
+        <p className="mt-3 text-sm leading-7 text-slate-700">{targetTitles.join(", ")}</p>
+      </div>
+
+      <div className="flex flex-wrap gap-3 pt-2">
+        <button
+          type="button"
+          onClick={copyAll}
+          className="rounded-full border border-cyan-500/50 bg-cyan-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-cyan-700"
+        >
+          {copiedLabel === "all" ? "Copied" : "Copy All Details"}
+        </button>
+        <button
+          type="button"
+          onClick={() => window.print()}
+          className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+        >
+          Print / Save as PDF
+        </button>
+        <a href="/contact" className="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100">
+          Contact Dhanesh
+        </a>
+      </div>
     </div>
   );
 }

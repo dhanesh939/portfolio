@@ -4,7 +4,6 @@ import { Card } from "@/components/Card";
 import { CTASection } from "@/components/CTASection";
 import { FrameworkFlow } from "@/components/FrameworkFlow";
 import { Hero } from "@/components/Hero";
-import { ImageGallery } from "@/components/ImageGallery";
 import { IndustryLabCard } from "@/components/IndustryLabCard";
 import { ProofBar } from "@/components/ProofBar";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -31,6 +30,15 @@ export const metadata: Metadata = {
   },
 };
 
+const proofOfFitCards = [
+  "Adobe Analytics Architect Expert",
+  "Enterprise consulting background across automotive, banking, telecom, ecommerce, retail, healthcare, insurance, and digital products",
+  "Adobe + Google measurement architecture across Adobe Analytics, Launch, Web SDK concepts, GA4, GTM, BigQuery, consent, and reporting governance",
+  "Customer intelligence architecture positioning across AEP, CJA, RT-CDP, AJO, Target, identity, data quality, and activation readiness",
+  "Strong technical foundation in JavaScript, data layer, browser debugging, QA, requirements translation, and implementation governance",
+  "Open to Director-level roles, architecture leadership, consulting, advisory, and modernization roadmaps",
+];
+
 export default function HomePage() {
   return (
     <main className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
@@ -38,9 +46,9 @@ export default function HomePage() {
         eyebrow="Director, Enterprise Customer Intelligence Architecture"
         title="Director, Enterprise Customer Intelligence Architecture"
         headline="I help enterprise brands turn fragmented digital behavior into trusted customer intelligence."
-        intro="I design customer data, measurement, journey analytics, consent, and personalization systems across Adobe Experience Cloud and Google’s marketing and data stack. My work helps teams move from disconnected tracking and inconsistent reporting to governed, AI-ready customer data that supports better decisions and scalable activation."
+        intro="I design customer data, measurement, journey analytics, consent, identity, personalization, and activation systems across Adobe Experience Cloud and Google’s marketing and data stack. My work helps teams move from disconnected tracking and inconsistent reporting to governed, AI-ready customer data that supports better decisions and scalable activation."
         buttons={[
-          { label: "View Director Resume", href: "/resume-director-enterprise-customer-intelligence-architecture" },
+          { label: "Director Resume", href: "/resume-director-enterprise-customer-intelligence-architecture" },
           { label: "Explore Industry Labs", href: "/industry-labs" },
           { label: "Work With Me", href: "/work-with-me" },
         ]}
@@ -48,7 +56,20 @@ export default function HomePage() {
       />
 
       <ProofBar items={proofItems} />
-      <ImageGallery />
+
+      <section className="space-y-6">
+        <SectionHeader
+          eyebrow="Proof of fit"
+          title="Proof of fit for senior Adobe, Google, martech, and customer data roles"
+        />
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {proofOfFitCards.map((item) => (
+            <Card key={item}>
+              <p className="text-sm leading-7 text-slate-400">{item}</p>
+            </Card>
+          ))}
+        </div>
+      </section>
 
       <section className="space-y-6">
         <SectionHeader

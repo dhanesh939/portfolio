@@ -6,7 +6,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { siteConfig } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: `Contact | ${siteConfig.name}`,
+  title: `Contact Dhanesh Patel | Customer Intelligence & Martech Architect`,
   description: "Contact Dhanesh Patel for full-time, consulting, and advisory work.",
 };
 
