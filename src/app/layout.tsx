@@ -17,24 +17,36 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://dhaneshpatel.com"),
   title: {
-    default: "Dhanesh Patel | Enterprise Customer Intelligence Architect",
+    default: "Dhanesh Patel | Director, Enterprise Customer Intelligence Architecture",
     template: "%s | Dhanesh Patel",
   },
   description:
-    "Dhanesh Patel helps enterprise brands design trusted customer data systems across Adobe, Google, analytics, consent, personalization, and AI-readiness.",
+    "Director-level customer intelligence and martech architecture leader helping enterprise brands design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-readiness.",
+  alternates: {
+    canonical: "https://dhaneshpatel.com",
+  },
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: "Dhanesh Patel | Enterprise Customer Intelligence Architect",
+    title: "Dhanesh Patel | Director, Enterprise Customer Intelligence Architecture",
     description:
-      "Dhanesh Patel helps enterprise brands design trusted customer data systems across Adobe, Google, analytics, consent, personalization, and AI-readiness.",
+      "Director-level customer intelligence and martech architecture leader helping enterprise brands design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-readiness.",
     type: "website",
     url: "https://dhaneshpatel.com",
     images: [{ url: "/og-image.svg" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dhanesh Patel | Enterprise Customer Intelligence Architect",
+    title: "Dhanesh Patel | Director, Enterprise Customer Intelligence Architecture",
     description:
-      "Dhanesh Patel helps enterprise brands design trusted customer data systems across Adobe, Google, analytics, consent, personalization, and AI-readiness.",
+      "Director-level customer intelligence and martech architecture leader helping enterprise brands design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-readiness.",
     images: ["/og-image.svg"],
   },
 };

@@ -6,8 +6,8 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { labsPreview, siteConfig } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: `Industry Labs | ${siteConfig.name}`,
-  description: "Public strategy studies and reference architectures for customer intelligence and measurement architecture.",
+  title: `Industry Labs | Adobe, Google & AI-Ready Customer Data`,
+  description: "Public strategy labs and reference architectures for Adobe Experience Cloud, Google analytics, customer data platforms, personalization, measurement governance, and AI-ready customer intelligence.",
 };
 
 export default function IndustryLabsPage() {
@@ -16,12 +16,12 @@ export default function IndustryLabsPage() {
       <section className="rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,_rgba(15,23,42,0.95),_rgba(2,6,23,0.95))] p-8 shadow-[0_30px_80px_rgba(2,6,23,0.3)] sm:p-10 lg:p-12">
         <SectionHeader
           eyebrow="Industry Labs"
-          title="Public strategy studies, reference architectures, and simulated enterprise scenarios"
-          subtitle="Industry Labs are public strategy studies, reference architectures, and simulated enterprise scenarios. They are designed to show how I think about modern customer data problems across Adobe, Google, analytics, governance, personalization, and AI-readiness."
+          title="Director-level strategy studies and reference architectures"
+          subtitle="These are public thinking artifacts for enterprise customer intelligence, Adobe + Google measurement modernization, consent-aware data design, personalization, and AI-ready customer data systems."
         />
         <Card className="mt-8">
           <p className="text-sm leading-8 text-slate-400">
-            These are public learning and strategy artifacts, not confidential client case studies.
+            These are public learning and strategy artifacts, not confidential client case studies. They are designed to demonstrate how I approach modern customer data problems at the enterprise level.
           </p>
         </Card>
       </section>

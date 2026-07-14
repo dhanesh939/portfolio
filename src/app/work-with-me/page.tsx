@@ -6,7 +6,7 @@ import { consultingOffers, fullTimeRoles, siteConfig } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: `Work With Me | ${siteConfig.name}`,
-  description: "Full-time and consulting opportunities for enterprise customer intelligence architecture work.",
+  description: "Full-time and consulting opportunities for enterprise customer intelligence architecture, Adobe Experience Cloud, martech modernization, and AI-ready customer data work.",
 };
 
 export default function WorkWithMePage() {
@@ -15,13 +15,13 @@ export default function WorkWithMePage() {
       <section className="rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,_rgba(15,23,42,0.95),_rgba(2,6,23,0.95))] p-8 shadow-[0_30px_80px_rgba(2,6,23,0.3)] sm:p-10 lg:p-12">
         <SectionHeader
           eyebrow="Work with me"
-          title="Trusted measurement, clean customer data, and practical architecture"
-          subtitle="I partner with teams that need trusted measurement, clean customer data, and practical architecture across Adobe, Google, and AI-ready martech systems."
+          title="Work with a Director-level Customer Intelligence Architect"
+          subtitle="I help teams modernize customer data, measurement, analytics, personalization, and AI-readiness across Adobe and Google ecosystems."
         />
       </section>
 
       <section className="space-y-6">
-        <SectionHeader eyebrow="Full-time roles" title="Leadership and architect roles" />
+        <SectionHeader eyebrow="Full-time leadership roles" title="Best fit for organizations that need someone who can bridge marketing, analytics, product, engineering, data, privacy, and executive stakeholders." />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {fullTimeRoles.map((role) => (
             <Card key={role}>
@@ -32,7 +32,7 @@ export default function WorkWithMePage() {
       </section>
 
       <section className="space-y-6">
-        <SectionHeader eyebrow="Consulting / advisory" title="Offers for modernizing measurement and customer data systems" />
+        <SectionHeader eyebrow="Consulting / advisory offers" title="Architecture reviews, audits, modernization, and roadmap support" />
         <div className="grid gap-5 lg:grid-cols-2">
           {consultingOffers.map((offer) => (
             <Card key={offer.title}>

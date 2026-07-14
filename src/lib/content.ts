@@ -1,11 +1,11 @@
 export const siteConfig = {
   name: "Dhanesh Patel",
-  title: "Enterprise Customer Intelligence Architect",
+  title: "Director, Enterprise Customer Intelligence Architecture",
   location: "Dallas, TX / Remote",
   email: "dhaneshpatel1234@gmail.com",
   linkedin: "https://www.linkedin.com/in/dhaneshpatel1234/",
   description:
-    "Dhanesh Patel helps enterprise brands design trusted customer data systems across Adobe, Google, analytics, consent, personalization, and AI-readiness.",
+    "Director-level customer intelligence and martech architecture leader helping enterprise brands design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-readiness.",
 };
 
 export const navLinks = [
@@ -13,77 +13,76 @@ export const navLinks = [
   { label: "About", href: "/about" },
   { label: "Industry Labs", href: "/industry-labs" },
   { label: "Stack", href: "/stack" },
-  { label: "Resume", href: "/resume" },
+  { label: "Director Resume", href: "/resume-director-enterprise-customer-intelligence-architecture" },
   { label: "Work With Me", href: "/work-with-me" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const proofItems = [
-  "Director at Razorfish",
+  "Director-level customer intelligence & martech architecture",
   "Adobe Analytics Architect Expert",
-  "Enterprise consulting background",
-  "Automotive, banking, telecom, ecommerce, retail, healthcare & insurance",
-  "Adobe + Google Martech",
+  "Adobe Experience Cloud | AEP | CJA | RT-CDP | AJO | Target",
+  "GA4 | BigQuery | Looker | SQL",
   "Dallas, TX / Remote",
 ];
 
 export const solveCards = [
   {
-    title: "Fragmented Customer Data",
+    title: "Adobe Experience Cloud Architecture",
     description:
-      "When web, app, CRM, media, and offline touchpoints do not connect, customer journeys become invisible.",
+      "AEP, CJA, RT-CDP, AJO, Target, Adobe Analytics, Adobe Tags, Web SDK, XDM schemas, identities, data governance, and activation readiness.",
   },
   {
-    title: "Broken Measurement Trust",
+    title: "Measurement Modernization",
     description:
-      "When tags fire inconsistently or definitions change across teams, reports lose credibility.",
+      "Data layer architecture, event taxonomy, Adobe + GA4 parity, reporting governance, QA frameworks, attribution, and conversion tracking.",
   },
   {
-    title: "Adobe + Google Stack Gaps",
+    title: "Customer Data Platform Strategy",
     description:
-      "Many enterprises run Adobe and Google together but struggle with event parity, attribution, and reporting alignment.",
+      "Unified profiles, identity resolution, CRM integration, batch and streaming ingestion, audience activation, and customer journey intelligence.",
   },
   {
-    title: "Consent & Governance Complexity",
+    title: "Personalization & AI-Readiness",
     description:
-      "Privacy, consent, schemas, naming standards, and data quality need to be designed into the system from the start.",
+      "RT-CDP audiences, AJO journeys, Target personalization, experimentation, AI-assisted insights, and measurable optimization loops.",
   },
   {
-    title: "Personalization Readiness",
+    title: "Analytics Engineering Bridge",
     description:
-      "Personalization depends on clean audiences, real-time profiles, trustworthy behavior data, and measurable outcomes.",
+      "GA4, BigQuery, SQL, modeled reporting layers, conversion marts, and cross-channel performance reporting.",
   },
   {
-    title: "AI-Readiness Gaps",
+    title: "Enterprise Leadership",
     description:
-      "AI is only as useful as the customer data foundation behind it. Messy data creates weak automation and poor decisions.",
+      "Roadmap ownership, stakeholder management, technical leadership, cross-functional delivery, offshore collaboration, and executive communication.",
   },
 ];
 
 export const frameworkSteps = [
   {
     title: "Collect",
-    description: "Web, app, campaign, CRM, service, and offline events",
+    description: "Adobe Web SDK, Adobe Tags, GTM, GA4, CRM, campaign, service, and offline events",
   },
   {
     title: "Govern",
-    description: "Consent, privacy, schemas, naming standards, QA, data quality",
+    description: "Consent, OneTrust, XDM, event taxonomy, data quality, DULE policies, QA",
   },
   {
     title: "Stitch",
-    description: "Identity, profiles, known/unknown behavior, cross-channel journeys",
+    description: "AEP identities, CRM IDs, device IDs, merge policies, known/unknown user behavior",
   },
   {
     title: "Analyze",
-    description: "Adobe Analytics, CJA, GA4, BigQuery, Looker, dashboards",
+    description: "Adobe Analytics, CJA, GA4, BigQuery, Looker, attribution, journey analysis",
   },
   {
     title: "Activate",
-    description: "RT-CDP, AJO, Target, audiences, journeys, personalization",
+    description: "RT-CDP, AJO, Target, audiences, destinations, personalization",
   },
   {
     title: "Optimize",
-    description: "Experimentation, AI-assisted insights, conversion, retention, growth",
+    description: "Experimentation, performance reporting, conversion, lifecycle growth, AI-assisted insights",
   },
 ];
 
@@ -118,71 +117,74 @@ export const stackCategories = [
   {
     title: "Adobe Experience Cloud",
     tools: [
-      "Adobe Analytics",
-      "Adobe Tags / Launch",
-      "Adobe Web SDK",
-      "Adobe Experience Platform",
-      "Customer Journey Analytics",
-      "Real-Time CDP",
-      "Adobe Journey Optimizer",
-      "Adobe Target",
-      "XDM, schemas, datasets, identity, governance",
+      { name: "Adobe Analytics", description: "Measurement architecture, reporting governance, and cross-channel performance analysis." },
+      { name: "Adobe Tags / Launch", description: "Tag governance, instrumentation, rule logic, and implementation standards." },
+      { name: "Adobe Web SDK", description: "Modern event collection aligned to edge and streaming measurement patterns." },
+      { name: "AEP / CJA / RT-CDP", description: "Customer journey data, profiles, audiences, identity, and activation readiness." },
+      { name: "AJO / Target", description: "Journey orchestration, personalization, and experimentation loops." },
     ],
   },
   {
-    title: "Google & Data Stack",
+    title: "Google Marketing & Data Stack",
     tools: [
-      "GA4",
-      "GTM",
-      "BigQuery",
-      "Looker Studio",
-      "SQL",
-      "server-side tagging concepts",
-      "event modeling",
-      "reporting marts",
+      { name: "GA4", description: "Event-level measurement aligned to web, app, and conversion strategy." },
+      { name: "Google Tag Manager", description: "Tag management, event implementation, consent-aware data collection." },
+      { name: "BigQuery", description: "Enterprise-scale modeling, data marts, and analytics engineering." },
+      { name: "Looker Studio / Looker", description: "Executive dashboards, KPI reporting, and stakeholder-friendly performance views." },
+      { name: "SQL", description: "Event modeling, session modeling, conversion marts, and quality checks." },
     ],
   },
   {
-    title: "Strategy & Governance",
+    title: "Customer Data & Governance",
     tools: [
-      "data layer architecture",
-      "event taxonomy",
-      "consent-aware measurement",
-      "QA frameworks",
-      "analytics requirements",
-      "implementation standards",
-      "stakeholder translation",
+      { name: "XDM / Schema Design", description: "Auditable structure for customer data across Adobe and downstream activation tools." },
+      { name: "Identity Resolution", description: "Known and unknown customer identity stitching across channels and systems." },
+      { name: "Consent Management", description: "Privacy-aware measurement that supports compliance and trustworthy activation." },
+      { name: "Data Layer & Event Taxonomy", description: "The foundation for reliable analytics, reporting, and activation logic." },
+      { name: "Data Governance", description: "Standards, quality controls, documentation, and implementation governance." },
     ],
   },
 ];
 
 export const fullTimeRoles = [
-  "Martech Solutions Architect",
-  "Customer Data Platform Architect",
-  "Digital Analytics Architect",
+  "Director of Marketing Technology",
+  "Director of Analytics Architecture",
   "Adobe Experience Cloud Architect",
+  "Customer Data Platform Architect",
+  "Martech Solutions Architect",
+  "Digital Analytics Architect",
   "Measurement Strategy Lead",
 ];
 
 export const consultingOffers = [
   {
-    title: "Analytics Implementation Audit",
+    title: "Adobe Experience Cloud Architecture Review",
     description:
-      "Review tags, data layer, events, variables, consent logic, QA gaps, and reporting trust.",
+      "Assess your Adobe stack, measurement model, identity strategy, governance, and activation readiness.",
   },
   {
     title: "Adobe + Google Measurement Modernization",
     description:
-      "Align Adobe Analytics, CJA, GA4, GTM, BigQuery, and reporting definitions.",
+      "Align Adobe Analytics, CJA, GA4, GTM, BigQuery, and reporting definitions around one trusted framework.",
   },
   {
-    title: "AEP / CJA Readiness Assessment",
+    title: "AEP / CJA / RT-CDP / AJO Readiness Assessment",
     description:
-      "Assess schemas, datasets, identities, governance, reporting model, and activation readiness.",
+      "Evaluate schemas, datasets, identities, governance, reporting model, and personalization readiness.",
   },
   {
-    title: "Personalization & AI-Readiness Strategy",
+    title: "Consent-Aware Measurement Audit",
     description:
-      "Design the customer data foundation needed for RT-CDP, AJO, Target, AI-assisted insights, and personalization.",
+      "Review consent logic, data collection behavior, privacy alignment, and reporting quality across the stack.",
+  },
+  {
+    title: "GA4 + BigQuery Analytics Mart Strategy",
+    description:
+      "Design the reporting layer, event model, and stakeholder views needed for analytics engineering and business insight.",
+  },
+  {
+    title: "Personalization & AI-Readiness Roadmap",
+    description:
+      "Design the customer data foundation needed for RT-CDP, AJO, Target, AI-assisted insights, and measurable optimization.",
   },
 ];

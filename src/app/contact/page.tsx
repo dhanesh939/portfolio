@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Card } from "@/components/Card";
+import { ContactForm } from "@/components/ContactForm";
 import { SectionHeader } from "@/components/SectionHeader";
 import { siteConfig } from "@/lib/content";
 
@@ -16,49 +17,32 @@ export default function ContactPage() {
         <SectionHeader
           eyebrow="Contact"
           title="Open to full-time roles, consulting, advisory work, and architecture reviews"
-          subtitle="For now, reach out by email or LinkedIn. A contact form will be wired up soon."
+          subtitle="For direct outreach, use email or LinkedIn. The form below will send a message to dhaneshpatel1234@gmail.com."
         />
       </section>
 
       <section className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-        <Card>
-          <h3 className="text-2xl font-semibold text-white">Direct contact</h3>
-          <ul className="mt-5 space-y-4 text-sm leading-8 text-slate-400">
-            <li>Email: <Link href={`mailto:${siteConfig.email}`} className="text-cyan-300">{siteConfig.email}</Link></li>
-            <li>
-              LinkedIn: <Link href={siteConfig.linkedin} className="text-cyan-300" target="_blank" rel="noreferrer">
-                {siteConfig.linkedin}
-              </Link>
-            </li>
-            <li>Location: Dallas, TX / Remote</li>
-          </ul>
-        </Card>
+        <div className="space-y-6">
+          <Card>
+            <h3 className="text-2xl font-semibold text-white">Direct contact</h3>
+            <ul className="mt-5 space-y-4 text-sm leading-8 text-slate-400">
+              <li>Email: <Link href={`mailto:${siteConfig.email}`} className="text-cyan-300">{siteConfig.email}</Link></li>
+              <li>
+                LinkedIn: <Link href={siteConfig.linkedin} className="text-cyan-300" target="_blank" rel="noreferrer">
+                  {siteConfig.linkedin}
+                </Link>
+              </li>
+              <li>Location: Dallas, TX / Remote</li>
+              <li>Best fit for outreach: Director-level architecture, Adobe/Google martech, measurement modernization, and consulting engagements</li>
+            </ul>
+          </Card>
+          <Card>
+            <h3 className="text-2xl font-semibold text-white">What to include</h3>
+            <p className="mt-4 text-sm leading-8 text-slate-400">A brief note about your team, timeline, scope, and whether you are hiring for a senior role, architecture review, consulting partner, or advisory engagement helps me respond faster.</p>
+          </Card>
+        </div>
 
-        <Card>
-          <form className="space-y-4">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <label className="text-sm text-slate-300">
-                <span className="mb-2 block">Name</span>
-                <input className="w-full rounded-xl border border-white/10 bg-slate-900/70 px-4 py-3 text-white outline-none" placeholder="Your name" />
-              </label>
-              <label className="text-sm text-slate-300">
-                <span className="mb-2 block">Email</span>
-                <input className="w-full rounded-xl border border-white/10 bg-slate-900/70 px-4 py-3 text-white outline-none" placeholder="you@company.com" />
-              </label>
-            </div>
-            <label className="block text-sm text-slate-300">
-              <span className="mb-2 block">Company</span>
-              <input className="w-full rounded-xl border border-white/10 bg-slate-900/70 px-4 py-3 text-white outline-none" placeholder="Company name" />
-            </label>
-            <label className="block text-sm text-slate-300">
-              <span className="mb-2 block">Message</span>
-              <textarea className="min-h-36 w-full rounded-xl border border-white/10 bg-slate-900/70 px-4 py-3 text-white outline-none" placeholder="Tell me about your team and what you need help with." />
-            </label>
-            <button className="inline-flex rounded-full border border-cyan-400/70 bg-cyan-500/10 px-5 py-3 text-sm font-semibold text-cyan-200 transition hover:bg-cyan-500/20" type="button">
-              Send Message
-            </button>
-          </form>
-        </Card>
+        <ContactForm />
       </section>
     </main>
   );

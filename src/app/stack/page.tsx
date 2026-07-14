@@ -5,8 +5,8 @@ import { StackGrid } from "@/components/StackGrid";
 import { siteConfig, stackCategories } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: `Stack | ${siteConfig.name}`,
-  description: "A view of the Adobe, Google, data, and governance stack that supports customer intelligence architecture.",
+  title: `Adobe + Google Martech Stack | Dhanesh Patel`,
+  description: "Adobe Experience Cloud, AEP, CJA, RT-CDP, AJO, Target, Adobe Analytics, GA4, GTM, BigQuery, Looker, customer data architecture, and AI-ready data systems.",
 };
 
 export default function StackPage() {
@@ -56,7 +56,7 @@ export default function StackPage() {
         <Card>
           <h3 className="text-2xl font-semibold text-white">AI-Ready Data Systems</h3>
           <p className="mt-3 text-sm leading-8 text-slate-400">
-            Used to ensure data quality, standardization, and governance are in place before AI models or personalization engines are trusted.
+            Used to ensure data quality, standardization, and governance are in place before AI models or personalization engines are entrusted with decision-making.
           </p>
         </Card>
       </section>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "./Logo";
 import { navLinks, siteConfig } from "@/lib/content";
 
 export function Footer() {
@@ -8,9 +9,10 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-slate-950/80">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8">
         <div>
-          <p className="text-xl font-semibold text-white">{siteConfig.name}</p>
+          <Logo className="mb-5" />
           <p className="mt-2 text-sm uppercase tracking-[0.26em] text-cyan-300">{siteConfig.title}</p>
           <p className="mt-4 max-w-xl text-sm leading-7 text-slate-400">{siteConfig.location}</p>
+          <p className="mt-2 text-sm leading-7 text-slate-400">Email: {siteConfig.email}</p>
         </div>
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">Navigate</p>

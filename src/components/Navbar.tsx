@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "./Button";
-import { navLinks, siteConfig } from "@/lib/content";
+import { Logo } from "./Logo";
+import { navLinks } from "@/lib/content";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,13 +13,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full border border-cyan-400/40 bg-cyan-500/10 text-sm font-semibold text-cyan-200">
-            DP
-          </div>
-          <div>
-            <p className="text-sm font-semibold text-white">{siteConfig.name}</p>
-            <p className="text-xs text-slate-400">{siteConfig.title}</p>
-          </div>
+          <Logo compact />
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">

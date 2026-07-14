@@ -19,10 +19,11 @@ import {
 } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} | ${siteConfig.title}`,
-  description: siteConfig.description,
+  title: `Dhanesh Patel | Director, Enterprise Customer Intelligence Architecture`,
+  description:
+    "Director-level customer intelligence and martech architecture leader helping enterprise brands design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-readiness.",
   openGraph: {
-    title: `${siteConfig.name} | ${siteConfig.title}`,
+    title: `Dhanesh Patel | Director, Enterprise Customer Intelligence Architecture`,
     description: siteConfig.description,
     type: "website",
     url: "https://dhaneshpatel.com",
@@ -34,16 +35,16 @@ export default function HomePage() {
   return (
     <main className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
       <Hero
-        eyebrow="Enterprise Customer Intelligence Architect"
-        title="Enterprise Customer Intelligence Architect"
-        headline="I help enterprise brands design trusted customer data systems across analytics, consent, identity, journey intelligence, personalization, and AI-readiness."
-        intro="My work sits at the intersection of Adobe Experience Cloud, Google Marketing Platform, customer data architecture, measurement strategy, and personalization systems. I help teams move from fragmented tracking and disconnected reporting to governed customer intelligence that supports better decisions and AI-ready experiences."
+        eyebrow="Director, Enterprise Customer Intelligence Architecture"
+        title="Director, Enterprise Customer Intelligence Architecture"
+        headline="I help enterprise brands turn fragmented digital behavior into trusted customer intelligence."
+        intro="I design customer data, measurement, journey analytics, consent, and personalization systems across Adobe Experience Cloud and Google’s marketing and data stack. My work helps teams move from disconnected tracking and inconsistent reporting to governed, AI-ready customer data that supports better decisions and scalable activation."
         buttons={[
-          { label: "View Industry Labs", href: "/industry-labs" },
-          { label: "View Resume", href: "/resume" },
+          { label: "View Director Resume", href: "/resume-director-enterprise-customer-intelligence-architecture" },
+          { label: "Explore Industry Labs", href: "/industry-labs" },
           { label: "Work With Me", href: "/work-with-me" },
         ]}
-        proofLine="Director at Razorfish · Adobe Analytics Architect Expert · Dallas / Remote"
+        proofLine="Director-level customer intelligence & martech architecture · Razorfish · Adobe Analytics Architect Expert · Dallas / Remote"
       />
 
       <ProofBar items={proofItems} />
@@ -51,9 +52,9 @@ export default function HomePage() {
 
       <section className="space-y-6">
         <SectionHeader
-          eyebrow="What I solve"
-          title="The problems that quietly undermine growth, trust, and decision-making"
-          subtitle="When the foundation is weak, every downstream activation and insight becomes more expensive and less trustworthy."
+          eyebrow="What recruiters should know"
+          title="Built for the problems enterprise teams are hiring for"
+          subtitle="This is the language of Adobe, AEP, CJA, RT-CDP, martech, measurement modernization, and customer data leadership."
         />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {solveCards.map((card) => (
@@ -73,17 +74,7 @@ export default function HomePage() {
         />
         <div className="rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-[0_20px_60px_rgba(2,6,23,0.25)] sm:p-8">
           <div className="mb-8 flex flex-wrap gap-3 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">
-            <span>Collect</span>
-            <span>→</span>
-            <span>Govern</span>
-            <span>→</span>
-            <span>Stitch</span>
-            <span>→</span>
-            <span>Analyze</span>
-            <span>→</span>
-            <span>Activate</span>
-            <span>→</span>
-            <span>Optimize</span>
+            <span>Collect</span><span>→</span><span>Govern</span><span>→</span><span>Stitch</span><span>→</span><span>Analyze</span><span>→</span><span>Activate</span><span>→</span><span>Optimize</span>
           </div>
           <FrameworkFlow steps={frameworkSteps} />
         </div>
@@ -93,7 +84,7 @@ export default function HomePage() {
         <SectionHeader
           eyebrow="Industry Labs"
           title="Public strategy studies and reference architectures"
-          subtitle="These labs show how I approach big customer data, measurement, personalization, and AI-readiness problems in enterprise environments."
+          subtitle="These are not confidential client case studies. They are Director-level thought leadership artifacts that show how I approach modern customer data problems."
         />
         <div className="grid gap-5 lg:grid-cols-2">
           {labsPreview.map((lab) => (
@@ -106,7 +97,7 @@ export default function HomePage() {
       </section>
 
       <section className="space-y-6">
-        <SectionHeader eyebrow="Stack" title="The tools that sit inside the customer intelligence layer" />
+        <SectionHeader eyebrow="Stack" title="The stack behind trusted customer intelligence" subtitle="Adobe, Google, customer data architecture, analytics engineering, and governance all work best when they are connected to one operating model." />
         <StackGrid categories={stackCategories} />
       </section>
 
@@ -118,7 +109,7 @@ export default function HomePage() {
               I work best where business questions, technical systems, and messy data collide.
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-400">
-              I started from an engineering and development background, then moved into analytics because I enjoyed solving invisible problems — the kind where the website looks fine, but the data telling the business story is wrong. Today, I focus on customer intelligence: helping teams design measurement and data systems that are trusted, governed, and ready for personalization and AI-driven experiences.
+              I bring a technical foundation in engineering and development into enterprise analytics, martech, and customer intelligence strategy. My work is focused on helping organizations design measurement systems that are trusted, governed, and ready for personalization and AI-driven experiences.
             </p>
           </div>
           <div className="flex justify-start lg:justify-end">
@@ -128,8 +119,8 @@ export default function HomePage() {
       </section>
 
       <CTASection
-        title="Available for senior roles, consulting, and advisory work"
-        description="If you are hiring for a senior martech, analytics, or customer data architecture leader, or need an architecture review, I would be glad to connect."
+        title="Available for Director-level roles, consulting, and advisory work"
+        description="If your team needs a senior leader to modernize customer data, measurement, Adobe + Google architecture, AEP/CJA readiness, or AI-ready personalization strategy, I would be glad to connect."
         href="/work-with-me"
         buttonLabel="Work With Me"
       />
