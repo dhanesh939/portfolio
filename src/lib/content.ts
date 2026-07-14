@@ -2,8 +2,8 @@ export const siteConfig = {
   name: "Dhanesh Patel",
   title: "Enterprise Customer Intelligence Architect",
   location: "Dallas, TX / Remote",
-  email: "hello@dhaneshpatel.com",
-  linkedin: "https://www.linkedin.com/in/dhaneshpatel",
+  email: "dhaneshpatel1234@gmail.com",
+  linkedin: "https://www.linkedin.com/in/dhaneshpatel1234/",
   description:
     "Dhanesh Patel helps enterprise brands design trusted customer data systems across Adobe, Google, analytics, consent, personalization, and AI-readiness.",
 };
@@ -19,7 +19,7 @@ export const navLinks = [
 ];
 
 export const proofItems = [
-  "Associate Director at Razorfish",
+  "Director at Razorfish",
   "Adobe Analytics Architect Expert",
   "Enterprise consulting background",
   "Automotive, banking, telecom, ecommerce, retail, healthcare & insurance",

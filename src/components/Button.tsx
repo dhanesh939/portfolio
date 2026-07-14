@@ -7,6 +7,7 @@ type ButtonProps = {
   variant?: "primary" | "secondary" | "ghost";
   className?: string;
   external?: boolean;
+  download?: boolean;
 };
 
 export function Button({
@@ -15,6 +16,7 @@ export function Button({
   variant = "primary",
   className = "",
   external = false,
+  download = false,
 }: ButtonProps) {
   const base =
     "inline-flex items-center justify-center rounded-full border px-5 py-3 text-sm font-semibold transition-all duration-200";
@@ -32,13 +34,22 @@ export function Button({
     return <button className={classes}>{children}</button>;
   }
 
+  if (download || external) {
+    return (
+      <a
+        href={href}
+        className={classes}
+        target={external ? "_blank" : undefined}
+        rel={external ? "noreferrer" : undefined}
+        download={download ? "" : undefined}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <Link
-      href={href}
-      className={classes}
-      target={external ? "_blank" : undefined}
-      rel={external ? "noreferrer" : undefined}
-    >
+    <Link href={href} className={classes}>
       {children}
     </Link>
   );

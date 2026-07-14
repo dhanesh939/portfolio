@@ -4,6 +4,7 @@ import { Card } from "@/components/Card";
 import { CTASection } from "@/components/CTASection";
 import { FrameworkFlow } from "@/components/FrameworkFlow";
 import { Hero } from "@/components/Hero";
+import { ImageGallery } from "@/components/ImageGallery";
 import { IndustryLabCard } from "@/components/IndustryLabCard";
 import { ProofBar } from "@/components/ProofBar";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -42,10 +43,11 @@ export default function HomePage() {
           { label: "View Resume", href: "/resume" },
           { label: "Work With Me", href: "/work-with-me" },
         ]}
-        proofLine="Associate Director at Razorfish · Adobe Analytics Architect Expert · Dallas / Remote"
+        proofLine="Director at Razorfish · Adobe Analytics Architect Expert · Dallas / Remote"
       />
 
       <ProofBar items={proofItems} />
+      <ImageGallery />
 
       <section className="space-y-6">
         <SectionHeader

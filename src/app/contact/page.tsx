@@ -24,8 +24,12 @@ export default function ContactPage() {
         <Card>
           <h3 className="text-2xl font-semibold text-white">Direct contact</h3>
           <ul className="mt-5 space-y-4 text-sm leading-8 text-slate-400">
-            <li>Email: <Link href="mailto:hello@dhaneshpatel.com" className="text-cyan-300">hello@dhaneshpatel.com</Link></li>
-            <li>LinkedIn: <Link href="https://www.linkedin.com/in/dhaneshpatel" className="text-cyan-300" target="_blank" rel="noreferrer">https://www.linkedin.com/in/dhaneshpatel</Link></li>
+            <li>Email: <Link href={`mailto:${siteConfig.email}`} className="text-cyan-300">{siteConfig.email}</Link></li>
+            <li>
+              LinkedIn: <Link href={siteConfig.linkedin} className="text-cyan-300" target="_blank" rel="noreferrer">
+                {siteConfig.linkedin}
+              </Link>
+            </li>
             <li>Location: Dallas, TX / Remote</li>
           </ul>
         </Card>
