@@ -56,6 +56,21 @@ const targetTitles = [
 
 const experienceItems = [
   {
+    role: "Director - Data Instrumentation & Analytics Architecture",
+    company: "Razorfish (Publicis Groupe)",
+    location: "New York, USA",
+    period: "2022 - Present",
+    bullets: [
+      "Led migration from AppMeasurement to Adobe Web SDK aligned with XDM standards.",
+      "Designed and implemented enterprise data layer frameworks across multiple brands.",
+      "Built consent-aware tracking solutions integrated with OneTrust.",
+      "Identified and resolved tracking gaps, improving data accuracy across platforms.",
+      "Standardized telemetry architecture and event taxonomy across distributed systems.",
+      "Partnered with Product and Marketing teams to align tracking with business KPIs.",
+      "Conducted implementation audits and debugging across web and mobile platforms.",
+    ],
+  },
+  {
     role: "Senior Consultant, Adobe Analytics",
     company: "dentsu International",
     location: "Toronto, Canada",
