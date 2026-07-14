@@ -6,8 +6,8 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { siteConfig } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: `About | ${siteConfig.name}`,
-  description: "Director-level customer intelligence and martech architecture leader focused on Adobe Experience Cloud, Google, customer data, personalization, and AI-ready systems.",
+  title: "About Dhanesh Patel | Customer Intelligence & Martech Architect",
+  description: "Customer intelligence and martech architect focused on Adobe Experience Cloud, Google, customer data, personalization, and AI-ready systems.",
 };
 
 export default function AboutPage() {
@@ -23,7 +23,7 @@ export default function AboutPage() {
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button href="/industry-labs">Explore Labs</Button>
-          <Button href="/resume-director-enterprise-customer-intelligence-architecture" variant="secondary">View Director Resume</Button>
+          <Button href="/resume-director-enterprise-customer-intelligence-architecture" variant="secondary">View Resume</Button>
         </div>
       </section>
 

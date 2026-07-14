@@ -6,7 +6,8 @@ import { consultingOffers, fullTimeRoles, siteConfig } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: `Work With Me | ${siteConfig.name}`,
-  description: "Senior roles, architecture leadership, consulting, contract opportunities, and advisory work across enterprise customer intelligence architecture, Adobe Experience Cloud, martech modernization, and AI-ready customer data.",
+  description:
+    "Senior roles, architecture leadership, consulting, contract opportunities, and advisory work across enterprise customer intelligence architecture, Adobe Experience Cloud, martech modernization, and AI-ready customer data.",
 };
 
 export default function WorkWithMePage() {
@@ -15,13 +16,16 @@ export default function WorkWithMePage() {
       <section className="rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,_rgba(15,23,42,0.95),_rgba(2,6,23,0.95))] p-8 shadow-[0_30px_80px_rgba(2,6,23,0.3)] sm:p-10 lg:p-12">
         <SectionHeader
           eyebrow="Work with me"
-          title="Work with a Director-level Customer Intelligence Architect"
-          subtitle="I help teams modernize customer data, measurement, analytics, personalization, and AI-readiness across Adobe and Google ecosystems, and I am open to the right opportunity across full-time, contract, consulting, and advisory work."
+          title="Work with an Enterprise Customer Intelligence Architect"
+          subtitle="I'm open to the right opportunity across full-time roles, contract projects, consulting, and advisory work where I can help teams improve customer data, measurement, Adobe + Google architecture, AEP/CJA readiness, personalization, or AI-ready data strategy."
         />
       </section>
 
       <section className="space-y-6">
-        <SectionHeader eyebrow="Full-time leadership roles" title="Best fit for organizations that need someone who can bridge marketing, analytics, product, engineering, data, privacy, and executive stakeholders." />
+        <SectionHeader
+          eyebrow="Full-time leadership roles"
+          title="Best fit for organizations that need someone who can bridge marketing, analytics, product, engineering, data, privacy, and executive stakeholders."
+        />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {fullTimeRoles.map((role) => (
             <Card key={role}>
@@ -43,7 +47,12 @@ export default function WorkWithMePage() {
         </div>
       </section>
 
-      <CTASection title="Open to the right opportunity" description="I’m interested in senior roles, architecture leadership, consulting, contract projects, and advisory work where I can help teams improve customer data, measurement, Adobe + Google architecture, AEP/CJA readiness, personalization, or AI-ready data strategy." href="/contact" buttonLabel="Start a Conversation" />
+      <CTASection
+        title="Open to the right opportunity"
+        description="I'm interested in senior roles, architecture leadership, consulting, contract projects, and advisory work where I can help teams improve customer data, measurement, Adobe + Google architecture, AEP/CJA readiness, personalization, or AI-ready data strategy."
+        href="/contact"
+        buttonLabel="Start a Conversation"
+      />
     </main>
   );
 }

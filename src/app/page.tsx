@@ -4,7 +4,6 @@ import { Card } from "@/components/Card";
 import { CTASection } from "@/components/CTASection";
 import { FrameworkFlow } from "@/components/FrameworkFlow";
 import { Hero } from "@/components/Hero";
-import { ImageGallery } from "@/components/ImageGallery";
 import { IndustryLabCard } from "@/components/IndustryLabCard";
 import { ProofBar } from "@/components/ProofBar";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -19,11 +18,11 @@ import {
 } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: `Dhanesh Patel | Director, Enterprise Customer Intelligence Architecture`,
+  title: "Dhanesh Patel | Enterprise Customer Intelligence Architect",
   description:
-    "Director-level customer intelligence and martech architecture leader helping enterprise brands design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-readiness.",
+    "Enterprise customer intelligence architect helping enterprise teams design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-ready data.",
   openGraph: {
-    title: `Dhanesh Patel | Director, Enterprise Customer Intelligence Architecture`,
+    title: "Dhanesh Patel | Enterprise Customer Intelligence Architect",
     description: siteConfig.description,
     type: "website",
     url: "https://dhaneshpatel.com",
@@ -44,20 +43,19 @@ export default function HomePage() {
   return (
     <main className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
       <Hero
-        eyebrow="Director, Enterprise Customer Intelligence Architecture"
-        title="Director, Enterprise Customer Intelligence Architecture"
-        headline="I help enterprise brands turn fragmented digital behavior into trusted customer intelligence."
-        intro="I design customer data, measurement, journey analytics, consent, identity, personalization, and activation systems across Adobe Experience Cloud and Google’s marketing and data stack. My work helps teams move from disconnected tracking and inconsistent reporting to governed, AI-ready customer data that supports better decisions and scalable activation."
+        eyebrow="ENTERPRISE CUSTOMER INTELLIGENCE ARCHITECT"
+        title="Enterprise Customer Intelligence Architect"
+        headline="I help enterprise teams turn fragmented digital behavior into trusted customer intelligence."
+        intro="I design customer data, measurement, journey analytics, consent, identity, personalization, and activation systems across Adobe Experience Cloud and Google's marketing/data stack. My work helps teams move from disconnected tracking and inconsistent reporting to governed customer data that supports better decisions, scalable activation, and AI-ready experiences."
         buttons={[
-          { label: "Director Resume", href: "/resume-director-enterprise-customer-intelligence-architecture" },
+          { label: "View Resume", href: "/resume-director-enterprise-customer-intelligence-architecture" },
           { label: "Explore Industry Labs", href: "/industry-labs" },
-          { label: "Work With Me", href: "/work-with-me" },
+          { label: "Start a Conversation", href: "/contact" },
         ]}
-        proofLine="Director-level customer intelligence & martech architecture · Adobe Analytics Architect Expert · Dallas / Remote"
+        proofLine="Adobe Analytics Architect Expert | Adobe + Google Martech | Customer Data & Measurement Architecture | Dallas / Remote"
       />
 
       <ProofBar items={proofItems} />
-      <ImageGallery />
 
       <section className="space-y-6">
         <SectionHeader
@@ -97,7 +95,7 @@ export default function HomePage() {
         />
         <div className="rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-[0_20px_60px_rgba(2,6,23,0.25)] sm:p-8">
           <div className="mb-8 flex flex-wrap gap-3 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">
-            <span>Collect</span><span>→</span><span>Govern</span><span>→</span><span>Stitch</span><span>→</span><span>Analyze</span><span>→</span><span>Activate</span><span>→</span><span>Optimize</span>
+            <span>Collect</span><span>-&gt;</span><span>Govern</span><span>-&gt;</span><span>Stitch</span><span>-&gt;</span><span>Analyze</span><span>-&gt;</span><span>Activate</span><span>-&gt;</span><span>Optimize</span>
           </div>
           <FrameworkFlow steps={frameworkSteps} />
         </div>
@@ -107,7 +105,7 @@ export default function HomePage() {
         <SectionHeader
           eyebrow="Industry Labs"
           title="Public strategy studies and reference architectures"
-          subtitle="These are not confidential client case studies. They are Director-level thought leadership artifacts that show how I approach modern customer data problems."
+          subtitle="These are not confidential client case studies. They are public thought leadership artifacts that show how I approach modern customer data problems."
         />
         <div className="grid gap-5 lg:grid-cols-2">
           {labsPreview.map((lab) => (
@@ -120,7 +118,11 @@ export default function HomePage() {
       </section>
 
       <section className="space-y-6">
-        <SectionHeader eyebrow="Stack" title="The stack behind trusted customer intelligence" subtitle="Adobe, Google, customer data architecture, analytics engineering, and governance all work best when they are connected to one operating model." />
+        <SectionHeader
+          eyebrow="Stack"
+          title="The stack behind trusted customer intelligence"
+          subtitle="Adobe, Google, customer data architecture, analytics engineering, and governance all work best when they are connected to one operating model."
+        />
         <StackGrid categories={stackCategories} />
       </section>
 
@@ -143,7 +145,7 @@ export default function HomePage() {
 
       <CTASection
         title="Open to the right opportunity"
-        description="I’m interested in senior roles, architecture leadership, consulting, contract projects, and advisory work where I can help teams improve customer data, measurement, Adobe + Google architecture, AEP/CJA readiness, personalization, or AI-ready data strategy."
+        description="I'm interested in senior roles, architecture leadership, consulting, contract projects, and advisory work where I can help teams improve customer data, measurement, Adobe + Google architecture, AEP/CJA readiness, personalization, or AI-ready data strategy."
         href="/work-with-me"
         buttonLabel="Start a Conversation"
       />

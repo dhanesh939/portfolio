@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://dhaneshpatel.com"),
   title: {
-    default: "Dhanesh Patel | Director, Enterprise Customer Intelligence Architecture",
-    template: "%s | Dhanesh Patel",
+    default: "Dhanesh Patel | Enterprise Customer Intelligence Architect",
+    template: "%s",
   },
   description:
-    "Director-level customer intelligence and martech architecture leader helping enterprise brands design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-readiness.",
+    "Enterprise customer intelligence architect helping enterprise teams design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-ready data.",
   alternates: {
     canonical: "https://dhaneshpatel.com",
   },
@@ -35,18 +35,18 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Dhanesh Patel | Director, Enterprise Customer Intelligence Architecture",
+    title: "Dhanesh Patel | Enterprise Customer Intelligence Architect",
     description:
-      "Director-level customer intelligence and martech architecture leader helping enterprise brands design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-readiness.",
+      "Enterprise customer intelligence architect helping enterprise teams design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-ready data.",
     type: "website",
     url: "https://dhaneshpatel.com",
     images: [{ url: "/og-image.svg" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dhanesh Patel | Director, Enterprise Customer Intelligence Architecture",
+    title: "Dhanesh Patel | Enterprise Customer Intelligence Architect",
     description:
-      "Director-level customer intelligence and martech architecture leader helping enterprise brands design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-readiness.",
+      "Enterprise customer intelligence architect helping enterprise teams design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-ready data.",
     images: ["/og-image.svg"],
   },
 };

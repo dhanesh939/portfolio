@@ -4,9 +4,9 @@ import { ResumeDownloadBar } from "@/components/ResumeDownloadBar";
 import { siteConfig } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: `Director Resume | ${siteConfig.name} | Enterprise Customer Intelligence Architecture`,
+  title: "Resume | Dhanesh Patel | Enterprise Customer Intelligence Architect",
   description:
-    "Resume and application details for Dhanesh Patel, Director-level enterprise customer intelligence architect specializing in Adobe Experience Cloud, AEP, CJA, RT-CDP, AJO, Target, GA4, BigQuery, and AI-ready customer data.",
+    "Resume and application details for Dhanesh Patel, enterprise customer intelligence architect specializing in Adobe Experience Cloud, AEP, CJA, RT-CDP, AJO, Target, GA4, BigQuery, and AI-ready customer data.",
 };
 
 const detailSections = [
@@ -14,7 +14,7 @@ const detailSections = [
     title: "Personal Information",
     rows: [
       { label: "Name", value: "Dhanesh Patel" },
-      { label: "Title", value: "Director, Enterprise Customer Intelligence Architecture" },
+      { label: "Title", value: "Enterprise Customer Intelligence Architect" },
       { label: "Location", value: "Dallas, TX / Remote" },
       { label: "Website", value: "https://www.dhaneshpatel.com" },
       { label: "Email", value: "dhaneshpatel1234@gmail.com" },
@@ -167,10 +167,9 @@ export default function DirectorResumePage() {
             <header className="border-b border-slate-200 pb-6">
               <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
                 <div>
-                  <h1 className="text-3xl font-semibold tracking-tight text-slate-900">Dhanesh Patel</h1>
-                  <p className="mt-2 text-lg font-medium text-slate-700">Director, Enterprise Customer Intelligence Architecture</p>
+                  <h1 className="text-3xl font-semibold tracking-tight text-slate-900">Dhanesh Patel - Enterprise Customer Intelligence Architect</h1>
                   <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-600">
-                    Director-level customer intelligence and martech architecture leader with a foundation in analytics implementation, digital measurement, tagging strategy, customer journey analysis, and enterprise-grade technical delivery across Adobe, Google, and data-driven platforms.
+                    Customer intelligence and martech architecture leader with a foundation in analytics implementation, digital measurement, tagging strategy, customer journey analysis, and enterprise-grade technical delivery across Adobe, Google, and data-driven platforms.
                   </p>
                 </div>
                 <div className="text-sm leading-7 text-slate-600">

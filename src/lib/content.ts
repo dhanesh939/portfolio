@@ -1,11 +1,11 @@
 export const siteConfig = {
   name: "Dhanesh Patel",
-  title: "Director, Enterprise Customer Intelligence Architecture",
+  title: "Enterprise Customer Intelligence Architect",
   location: "Dallas, TX / Remote",
   email: "dhaneshpatel1234@gmail.com",
   linkedin: "https://www.linkedin.com/in/dhaneshpatel1234/",
   description:
-    "Director-level customer intelligence and martech architecture leader helping enterprise brands design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-readiness.",
+    "Enterprise customer intelligence architect helping enterprise teams design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-ready data.",
 };
 
 export const navLinks = [
@@ -19,7 +19,7 @@ export const navLinks = [
 ];
 
 export const proofItems = [
-  "Director-level customer intelligence & martech architecture",
+  "Enterprise customer intelligence architecture",
   "Adobe Analytics Architect Expert",
   "Adobe Experience Cloud | AEP | CJA | RT-CDP | AJO | Target",
   "GA4 | BigQuery | Looker | SQL",

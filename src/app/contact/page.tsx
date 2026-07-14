@@ -6,7 +6,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { siteConfig } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: `Contact Dhanesh Patel | Customer Intelligence & Martech Architect`,
+  title: "Contact Dhanesh Patel | Customer Intelligence & Martech Architect",
   description: "Contact Dhanesh Patel regarding senior roles, architecture leadership, consulting, contract projects, and advisory work.",
 };
 
@@ -33,7 +33,7 @@ export default function ContactPage() {
                 </Link>
               </li>
               <li>Location: Dallas, TX / Remote</li>
-              <li>Best fit for outreach: senior roles, architecture leadership, Adobe/Google martech, measurement modernization, consulting engagements, and contract support</li>
+              <li>Best fit for outreach: senior analytics, martech architecture, Adobe/Google measurement modernization, customer data strategy, consulting, advisory, and architecture review opportunities.</li>
             </ul>
           </Card>
           <Card>

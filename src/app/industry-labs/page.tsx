@@ -16,7 +16,7 @@ export default function IndustryLabsPage() {
       <section className="rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,_rgba(15,23,42,0.95),_rgba(2,6,23,0.95))] p-8 shadow-[0_30px_80px_rgba(2,6,23,0.3)] sm:p-10 lg:p-12">
         <SectionHeader
           eyebrow="Industry Labs"
-          title="Director-level strategy studies and reference architectures"
+          title="Strategy studies and reference architectures"
           subtitle="These are public thinking artifacts for enterprise customer intelligence, Adobe + Google measurement modernization, consent-aware data design, personalization, and AI-ready customer data systems."
         />
         <Card className="mt-8">

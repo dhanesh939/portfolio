@@ -22,7 +22,7 @@ export function Logo({ compact = false, className = "" }: LogoProps) {
       {!compact ? (
         <div>
           <p className="text-sm font-semibold tracking-[0.2em] text-white uppercase">Dhanesh Patel</p>
-          <p className="text-xs text-slate-400">Director, Enterprise Customer Intelligence Architecture</p>
+          <p className="text-xs text-slate-400">Enterprise Customer Intelligence Architect</p>
         </div>
       ) : null}
     </div>
