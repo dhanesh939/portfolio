@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Dhanesh Patel | Enterprise Customer Intelligence Architect",
     description: siteConfig.description,
     type: "website",
-    url: "https://dhaneshpatel.com",
+    url: "https://www.dhaneshpatel.com",
     images: [{ url: "/og-image.svg" }],
   },
 };

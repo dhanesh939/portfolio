@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dhaneshpatel.com"),
+  metadataBase: new URL("https://www.dhaneshpatel.com"),
   title: {
     default: "Dhanesh Patel | Enterprise Customer Intelligence Architect",
     template: "%s",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     "Enterprise customer intelligence architect helping enterprise teams design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-ready data.",
   alternates: {
-    canonical: "https://dhaneshpatel.com",
+    canonical: "https://www.dhaneshpatel.com",
   },
   icons: {
     icon: "/icon.svg",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description:
       "Enterprise customer intelligence architect helping enterprise teams design trusted customer data systems across Adobe Experience Cloud, Google, analytics, consent, personalization, and AI-ready data.",
     type: "website",
-    url: "https://dhaneshpatel.com",
+    url: "https://www.dhaneshpatel.com",
     images: [{ url: "/og-image.svg" }],
   },
   twitter: {

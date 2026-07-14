@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a Next.js project for `dhaneshpatel.com`.
 
-## Getting Started
-
-First, run the development server:
+## Local development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production domain
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Preferred production domain:
 
-## Learn More
+`https://www.dhaneshpatel.com`
 
-To learn more about Next.js, take a look at the following resources:
+All of the following should resolve to that primary URL:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `http://dhaneshpatel.com`
+- `http://www.dhaneshpatel.com`
+- `https://dhaneshpatel.com`
+- `https://www.dhaneshpatel.com`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## HTTPS and domain checklist
 
-## Deploy on Vercel
+In Vercel:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Add both domains:
+- `dhaneshpatel.com`
+- `www.dhaneshpatel.com`
+- Set `www.dhaneshpatel.com` as the primary domain.
+- Make sure the non-primary domain redirects to the primary domain.
+- Redeploy production after DNS or domain changes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+In Cloudflare:
+
+- SSL/TLS mode should be `Full` or `Full (strict)`.
+- Enable `Always Use HTTPS`.
+- Enable `Automatic HTTPS Rewrites`.
+- Make sure DNS records point correctly to Vercel.
+- Avoid proxy or DNS misconfiguration if Vercel domain verification fails.
+
+## Security notes
+
+- Metadata base, canonical URLs, and OpenGraph URLs should use `https://www.dhaneshpatel.com`.
+- Use only local relative asset paths or HTTPS URLs.
+- Avoid hardcoded `http://` URLs anywhere in metadata, assets, scripts, or API calls.
+- HSTS is enabled in `next.config.ts`, so keep HTTPS fully working in production.
+
+## Build
+
+```bash
+npm run build
+```
