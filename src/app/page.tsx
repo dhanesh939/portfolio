@@ -4,6 +4,7 @@ import { Card } from "@/components/Card";
 import { CTASection } from "@/components/CTASection";
 import { FrameworkFlow } from "@/components/FrameworkFlow";
 import { Hero } from "@/components/Hero";
+import { ImageGallery } from "@/components/ImageGallery";
 import { IndustryLabCard } from "@/components/IndustryLabCard";
 import { ProofBar } from "@/components/ProofBar";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -56,6 +57,7 @@ export default function HomePage() {
       />
 
       <ProofBar items={proofItems} />
+      <ImageGallery />
 
       <section className="space-y-6">
         <SectionHeader
