@@ -44,7 +44,7 @@ export default function HomePage() {
           { label: "Explore Industry Labs", href: "/industry-labs" },
           { label: "Work With Me", href: "/work-with-me" },
         ]}
-        proofLine="Director-level customer intelligence & martech architecture · Razorfish · Adobe Analytics Architect Expert · Dallas / Remote"
+        proofLine="Director-level customer intelligence & martech architecture · Adobe Analytics Architect Expert · Dallas / Remote"
       />
 
       <ProofBar items={proofItems} />

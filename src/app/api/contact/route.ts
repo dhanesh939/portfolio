@@ -31,10 +31,11 @@ export async function POST(request: NextRequest) {
     }
 
     if (!resend) {
+      console.error("Email delivery not configured: Missing RESEND_API_KEY");
       return NextResponse.json(
         {
           error:
-            "Email delivery is not configured yet. Set RESEND_API_KEY and CONTACT_TO_EMAIL in your environment before sending messages.",
+            "Message could not be sent right now. Please email me directly at dhaneshpatel1234@gmail.com.",
         },
         { status: 500 }
       );
