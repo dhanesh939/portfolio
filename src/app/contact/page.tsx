@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: `Contact Dhanesh Patel | Customer Intelligence & Martech Architect`,
-  description: "Contact Dhanesh Patel for full-time, consulting, and advisory work.",
+  description: "Contact Dhanesh Patel regarding senior roles, architecture leadership, consulting, contract projects, and advisory work.",
 };
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
       <section className="rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,_rgba(15,23,42,0.95),_rgba(2,6,23,0.95))] p-8 shadow-[0_30px_80px_rgba(2,6,23,0.3)] sm:p-10 lg:p-12">
         <SectionHeader
           eyebrow="Contact"
-          title="Open to full-time roles, consulting, advisory work, and architecture reviews"
+          title="Open to the right opportunity"
           subtitle="For direct outreach, use email or LinkedIn. The form below will send a message to dhaneshpatel1234@gmail.com."
         />
       </section>
@@ -33,12 +33,12 @@ export default function ContactPage() {
                 </Link>
               </li>
               <li>Location: Dallas, TX / Remote</li>
-              <li>Best fit for outreach: Director-level architecture, Adobe/Google martech, measurement modernization, and consulting engagements</li>
+              <li>Best fit for outreach: senior roles, architecture leadership, Adobe/Google martech, measurement modernization, consulting engagements, and contract support</li>
             </ul>
           </Card>
           <Card>
             <h3 className="text-2xl font-semibold text-white">What to include</h3>
-            <p className="mt-4 text-sm leading-8 text-slate-400">A brief note about your team, timeline, scope, and whether you are hiring for a senior role, architecture review, consulting partner, or advisory engagement helps me respond faster.</p>
+            <p className="mt-4 text-sm leading-8 text-slate-400">A brief note about your team, timeline, scope, and whether you are hiring for a senior role, architecture lead, consultant, contractor, or advisory partner helps me respond faster.</p>
           </Card>
         </div>
 

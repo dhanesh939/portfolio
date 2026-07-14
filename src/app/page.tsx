@@ -37,7 +37,7 @@ const proofOfFitCards = [
   "Adobe + Google measurement architecture across Adobe Analytics, Launch, Web SDK concepts, GA4, GTM, BigQuery, consent, and reporting governance",
   "Customer intelligence architecture positioning across AEP, CJA, RT-CDP, AJO, Target, identity, data quality, and activation readiness",
   "Strong technical foundation in JavaScript, data layer, browser debugging, QA, requirements translation, and implementation governance",
-  "Open to Director-level roles, architecture leadership, consulting, advisory, and modernization roadmaps",
+  "Open to the right opportunity across senior roles, architecture leadership, consulting, contract work, and advisory support",
 ];
 
 export default function HomePage() {
@@ -142,10 +142,10 @@ export default function HomePage() {
       </section>
 
       <CTASection
-        title="Available for Director-level roles, consulting, and advisory work"
-        description="If your team needs a senior leader to modernize customer data, measurement, Adobe + Google architecture, AEP/CJA readiness, or AI-ready personalization strategy, I would be glad to connect."
+        title="Open to the right opportunity"
+        description="I’m interested in senior roles, architecture leadership, consulting, contract projects, and advisory work where I can help teams improve customer data, measurement, Adobe + Google architecture, AEP/CJA readiness, personalization, or AI-ready data strategy."
         href="/work-with-me"
-        buttonLabel="Work With Me"
+        buttonLabel="Start a Conversation"
       />
     </main>
   );

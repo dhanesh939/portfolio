@@ -6,7 +6,7 @@ import { consultingOffers, fullTimeRoles, siteConfig } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: `Work With Me | ${siteConfig.name}`,
-  description: "Full-time and consulting opportunities for enterprise customer intelligence architecture, Adobe Experience Cloud, martech modernization, and AI-ready customer data work.",
+  description: "Senior roles, architecture leadership, consulting, contract opportunities, and advisory work across enterprise customer intelligence architecture, Adobe Experience Cloud, martech modernization, and AI-ready customer data.",
 };
 
 export default function WorkWithMePage() {
@@ -16,7 +16,7 @@ export default function WorkWithMePage() {
         <SectionHeader
           eyebrow="Work with me"
           title="Work with a Director-level Customer Intelligence Architect"
-          subtitle="I help teams modernize customer data, measurement, analytics, personalization, and AI-readiness across Adobe and Google ecosystems."
+          subtitle="I help teams modernize customer data, measurement, analytics, personalization, and AI-readiness across Adobe and Google ecosystems, and I am open to the right opportunity across full-time, contract, consulting, and advisory work."
         />
       </section>
 
@@ -43,7 +43,7 @@ export default function WorkWithMePage() {
         </div>
       </section>
 
-      <CTASection title="Start a conversation" description="If your team needs an architecture review, strategic roadmap, or senior leadership support, I would be glad to connect." href="/contact" buttonLabel="Contact Dhanesh" />
+      <CTASection title="Open to the right opportunity" description="I’m interested in senior roles, architecture leadership, consulting, contract projects, and advisory work where I can help teams improve customer data, measurement, Adobe + Google architecture, AEP/CJA readiness, personalization, or AI-ready data strategy." href="/contact" buttonLabel="Start a Conversation" />
     </main>
   );
 }

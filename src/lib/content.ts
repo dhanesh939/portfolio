@@ -13,7 +13,7 @@ export const navLinks = [
   { label: "About", href: "/about" },
   { label: "Industry Labs", href: "/industry-labs" },
   { label: "Stack", href: "/stack" },
-  { label: "Director Resume", href: "/resume-director-enterprise-customer-intelligence-architecture" },
+  { label: "Resume", href: "/resume-director-enterprise-customer-intelligence-architecture" },
   { label: "Work With Me", href: "/work-with-me" },
   { label: "Contact", href: "/contact" },
 ];
